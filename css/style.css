@@ -1,0 +1,114 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.6rem;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.header {
+  position: relative;
+  background-color: #fff;
+  background-image: url("../img/banner.png");
+  height: 30rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+.header__inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: block;
+ max-width: 20rem;
+ border: 1px solid #f1f1f1;
+ border-radius: 50%;
+ overflow: hidden;
+ box-shadow: 2px 4px rgba(241,241,241,0.3);
+ margin-top: 5rem;
+}
+.menu {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+.menu__item {
+  margin: 0 1rem;
+  position: relative;
+}
+.menu__item:hover .menu__child {
+  opacity: 1;
+  visibility: visible;
+}
+.menu__child {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  opacity: 0;
+  visibility: hidden;
+}
+.menu__child-item h4 {
+  color: white;
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  background-color: #00aefd;
+}
+.menu__child-item ul {
+  padding: 0;
+}
+.menu__child-list li {
+  color: darkcyan;
+  font-size: 1.4rem;
+  padding: 1.5rem;
+  border-top: 1px solid #eee;
+}
+.menu__link {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  display: block;
+  padding: 2rem;
+}
+.header__right {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  overflow: hidden;
+}
+.login, .signup {
+  margin-right: 2rem;
+  width: 5rem;
+  float: left;
+  background-color: #c0c0c9;
+  border: 1px solid #c0c0c9;
+  border-radius: 4px;
+}
+.login__title,.signup__title {
+  color: white;
+  float: left;
+}
+.login__icon, .signup__icon {
+  color: #f1f1f1;
+}
+.cart {
+    float: right;
+}
+.footer{
+  bottom: 0px;
+}
